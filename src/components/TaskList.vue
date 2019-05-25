@@ -23,7 +23,7 @@
       </div>
     </div>
 
-    <div class="btn btn-group px-0">
+    <div class="btn btn-group float-right mt-3 px-0">
       <button type="button" class="btn btn-warning"
               @click="$emit('clear:completed')"
       >
@@ -35,6 +35,8 @@
         <i class="fa fa-trash"></i> Clear All
       </button>
     </div>
+
+    <div class="clearfix"></div>
 
     <transition-group name="fade" tag="ul" class="list-group">
       <task-item v-for="(task, index) in tasks"
